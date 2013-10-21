@@ -1,0 +1,142 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Test funkcji wymaganych w ćwiczeniach, których nie udało się dodać do projektu">
+        <meta name="keywords" content="galeria, zdjęcia, galeria online, galeria multimedialna, dropbox" >
+    </head>
+    <body>
+        <!-- Etykieta do początu strony-->
+        <a name="nazwaEtykiety"></a>
+        <header>
+            <a href="index.html"><img src="logoTest.jpg" alt="Baner główny" width="60" height="79"/></a>
+            <a href="#" >Logowanie</a>
+            <a href ="signIn.html" >Rejstracja</a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Udostępnij</a></li>
+                <li><a href="#">Szukaj</a></li>
+                <li><a href="#">Albumy</a></li>
+                <li><a href="#">Grupy</a></li>
+                <li><a href="#">Mój profil</a></li>
+                <li><a href="#">TESTY</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <article>
+                <h2><strong> Test funkcji nie dodanych do projektu</strong></h2>
+                <p>Z uwagi na mnogość znaczników dostępnych w specyfikacji <em>HTML 5.0.</em> Koniecznym okazało się stworzenie osobnej podstrony do ich testowania.</p>
+            </article>
+            <section>
+                <h3>Oto przegląd znaczników wymaganych w specyfikacji:</h3>
+
+                <div>
+                    <h4>Test tabeli:</h4>
+                    <div>
+                        <h5>Oto najprostsza tabela:</h5>
+                        <table border="1">
+                            <tr>
+                                <td>1</td> <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td> <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <h5>Oto tabela zagnieżdżona z nagłówkiem:</h5>
+                        <table border="1">
+                            <caption>Tytuł tabeli!</caption>
+                            <tr>
+                                <td><table>
+                                        <tr>
+                                            <td>1.1</td>  <td>1.2</td> 
+                                        </tr>
+                                        <tr>
+                                            <td>1.3</td>  <td>1.4</td> 
+                                        </tr>
+                                    </table></td> <td>2</td> <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td> <td>5</td> <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td> <td>8</td> <td>9</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <h5>Oto tabela z połączonymi komórkami oraz pogrubionym tekstem:</h5>
+                        <table border="1">
+                            <tr>
+                                <th rowspan="3">1</th> <th colspan="2">2</th> <th>3</th>
+                            </tr>
+                            <tr>
+                                <td>4</td> <td>5</td> <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td> <td>8</td> <td>9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Test list:</h4>
+                    <div>
+                        <h5>Oto lista numerowana oraz zagnieżdżona:</h5>
+                        <ol>
+                            <li>
+                                Punkt pierwszy
+                                <ol>
+                                    <li>Punkt 1.1</li>
+                                    <li>Punkt 1.2</li>
+                                    <li>Punkt 1.3</li>
+                                </ol>
+                            </li>
+                            <li>Punkt drugi</li>
+                            <li>Punkt trzeci</li>
+                        </ol>
+
+                    </div>                   
+                </div>
+
+                <div>
+                    <h4>Test odnośników:</h4>
+                    <div>
+                        <h5>Oto odsyłacz do pobierania pliku z http:</h5>
+                        <a href="/WebGallery/data/download.rar">/WebGallery/data/download.rar</a>                  
+                    </div>
+
+                    <div>   
+                        <h5>Oto odsyłacz do pobierania pliku z ftp:</h5>
+                        <a href="ftp://ftp.helion.pl/PRZYKLADY.TXT">ftp://ftp.helion.pl/PRZYKLADY.TXT</a>>
+                    </div>
+
+                    <div>   
+                        <h5>Oto odsyłacz do etykiety:</h5>
+                        <a href="#nazwaEtykiety">Link do początku strony</a>
+                    </div>
+
+                    <h5>Oto odsyłacz adresu e-mail:</h5>
+                    <a href="mailto:d.furgaldaniel@gmail.com">kontakt z autorem</a>
+                </div>
+
+                <div>   
+                    <h5>Znaki specjalne:</h5>
+                    <p><i>&nbsp;, &copy;, &Eta;, &Lambda;, &amp;, &DoubleLeftRightArrow;</i></p>
+                </div>
+                <textarea maxlength="200">Pole tekstowe o długości 200 znaków</textarea>
+            </section>
+        </section>
+    </body>
+</html>
