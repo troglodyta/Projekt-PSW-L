@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Galeria internetowa umożliwiająca dzieleni się zdjęciami poprzez dysk sieciowy &quot;dropbox&quot;">
+        <meta name="keywords" content="galeria, zdjęcia, galeria online, galeria multimedialna, dropbox" >
     </head>
     <body>
         <header>
@@ -24,60 +21,53 @@ and open the template in the editor.
                 <li><a href="#">Grupy</a></li>
                 <li><a href="#">Mój profil</a></li>
                 <li><a href="test.html">TESTY1</a></li>
-                <li><a href="test2.html">TESTY2</a></li>
-                
+                <li><a href="test2.html">TESTY2</a></li>             
             </ul>
         </nav>
-        
+
         <section>
-            
-            <h3>Rejstracja</h3>
-            <form action="aditionalInfo.html" method="get">
-                <h4>Login</h4>
-                <input type="text" id="userLogin" >
-                <h4>Hasło</h4>
-                <input type=password id="userPassword">
-                 <h4>Nazwisko</h4>
-                <input type="text" id="surname" autocomplete="on" required>
-                 <h4>Imię</h4>
-                <input type="text" id="userName" autocomplete="on" autofocus>
-                <h4>Adres e-mail</h4>
-                <input type="email" id="userMail" autocomplete="on" required pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$">
-                 <h4>Telefon</h4>
-                <input type="tel" id="userTel">
-                <h4>Płeć</h4>
-                <input type="radio" name="group1" id="userFamale" value="k">
-                <label for="userFamale">Kobieta</label>
-                <input type="radio" name="group1" id="userMale" value="m">
-                <label for="userMale">Mężczyzna</label>
-                <h4>Miasto</h4>
-                <input type="text" id="city">
-                <h4>Data urodzenia</h4>
-                <input type="date" id="birthDate">
-                 <h4>Miesiąc urodzin</h4>
-                 <label for="txtList">Miesiąc urodzin
-                 <input list="months" id="txtList" placeholder="wybierz miesiąc" />
-                 <datalist id="months">
-                     <option value="Styczeń">
-                     <option value="Luty">
-                     <option value="Marzec">
-                     <option value="Kwiecień">
-                     <option value="Maj">
-                     <option value="Czerwiec">
-                     <option value="Lipiec">
-                     <option value="Sierpień">
-                     <option value="Wrzesień">
-                     <option value="Październik">
-                     <option value="Listopad">
-                     <option value="Grudzień">
-                 </datalist>
-                 <br/>
-                 
-                <input type="checkbox" id="agreement">
-                <label for="agreement">Akceptuje warunki umowy</label>
-                <br/>
-                <input type="submit" id="submit" value="Zarejestruj">
-                <input type="reset" value="Wyczyść" />
+
+            <h3>Ustawienia użytkownika:</h3>
+            <form id="aaa" action="aditionalInfo.html" method="get">
+                <p>
+                    <label>Wyszukaj:
+                        <input type = "search" placeholder = "przeszukaj ustawienia" />
+                    </label>
+                </p>
+
+                <p>
+                    <label>Kolor menu:
+                        <input type = "color" autofocus /> 
+                    </label>
+                </p>
+
+                <p>
+                    <label>Głośność:
+                        <input type = "range" 
+                               min = "0"
+                               max = "255"
+                               value = "0"
+                               step ="1"
+                               /> 
+                    </label>
+                </p>
+                <p>
+                    <label>Miesiąc urodzin:
+                        <input type = "month"  />
+                    </label>
+                </p>
+                <p>
+                    <label>Domyślna wyszukiwarka:
+                        <input type = "url" 
+                               placeholder = "http://" 
+                               value ="https://www.google.pl/"
+                               /> 
+                    </label>
+                </p>
+                <p>    <input type="submit" id="submit" value="Zarejestruj"/>
+                    <input type="reset" value="Wyczyść" />
+                </p>
+
             </form>             
         </section>
     </body>
